@@ -2,10 +2,10 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:C:/Users/Dell/Documents/GitHub/projectFieldWarning/src/FieldWarning/Temp/Unity.Properties.Editor.dll
+-out:"D:/unity/Field warning/projectFieldWarning/src/FieldWarning/Temp/Unity.Properties.Editor.dll"
 -nostdlib
 -unsafe
--r:C:/Users/Dell/Documents/GitHub/projectFieldWarning/src/FieldWarning/Library/ScriptAssemblies/Unity.Properties.dll
+-r:"D:/unity/Field warning/projectFieldWarning/src/FieldWarning/Library/ScriptAssemblies/Unity.Properties.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -88,20 +88,20 @@
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:"C:/Users/Dell/Documents/GitHub/projectFieldWarning/src/FieldWarning/Assets/Priority Queue.dll"
--r:C:/Users/Dell/Documents/GitHub/projectFieldWarning/src/FieldWarning/Assets/@Themes/ZiosThemes.dll
--r:C:/Users/Dell/Documents/GitHub/projectFieldWarning/src/FieldWarning/Assets/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll
--r:C:/Users/Dell/Documents/GitHub/projectFieldWarning/src/FieldWarning/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.4/System.Runtime.CompilerServices.Unsafe.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Mdb.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Pdb.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Rocks.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll
--r:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+-r:"D:/unity/Field warning/projectFieldWarning/src/FieldWarning/Assets/Priority Queue.dll"
+-r:"D:/unity/Field warning/projectFieldWarning/src/FieldWarning/Assets/@Themes/ZiosThemes.dll"
+-r:"D:/unity/Field warning/projectFieldWarning/src/FieldWarning/Assets/EasyRoads3D/Editor/EasyRoads3Dv3Editor.dll"
+-r:"D:/unity/Field warning/projectFieldWarning/src/FieldWarning/Assets/EasyRoads3D/lib/EasyRoads3Dv3.dll"
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.4/System.Runtime.CompilerServices.Unsafe.dll
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.dll
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Mdb.dll
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Pdb.dll
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/External/Cecil/Mono.Cecil.Rocks.dll
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll
+-r:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
 -r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
@@ -316,27 +316,27 @@
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
 -d:CROSS_PLATFORM_INPUT
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/CSharp/CSharpContainerGenerator.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/CSharp/CSharpGenerationBackend.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/CSharp/CSharpGenerationCache.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/GenerationBackend.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/IL/CecilGenerationBackend.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Internal/Editor/CodeGenEditor.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Internal/Editor/JsonGenEditor.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Introspection/IntrospectedPropertyDefinition.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Introspection/ReflectionPropertyTree.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Introspection/RoslynPropertyTypeNode.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Json/JsonSchema.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Json/JsonSchemaBuilder.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Json/Validator/JsonSchemaValidator.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/IContainerTypeTreeVisitor.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/IPropertyTypeNodeDeserializer.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/IPropertyTypeNodeSerialiser.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/PropertyTypeNode.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/PropertyTypeNodeJsonSerializer.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/Resolver/ContainerTypeCollector.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/Resolver/ContainerTypeTreePath.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/Resolver/TypeResolver.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/UserHookFlags.cs
--i:C:/Users/Dell/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/ReferenceAssemblies.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/CSharp/CSharpContainerGenerator.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/CSharp/CSharpGenerationBackend.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/CSharp/CSharpGenerationCache.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/GenerationBackend.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Generation/IL/CecilGenerationBackend.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Internal/Editor/CodeGenEditor.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Internal/Editor/JsonGenEditor.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Introspection/IntrospectedPropertyDefinition.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Introspection/ReflectionPropertyTree.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Introspection/RoslynPropertyTypeNode.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Json/JsonSchema.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Json/JsonSchemaBuilder.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/Json/Validator/JsonSchemaValidator.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/IContainerTypeTreeVisitor.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/IPropertyTypeNodeDeserializer.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/IPropertyTypeNodeSerialiser.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/PropertyTypeNode.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/PropertyTypeNodeJsonSerializer.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/Resolver/ContainerTypeCollector.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/Resolver/ContainerTypeTreePath.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/Resolver/TypeResolver.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/PropertyTree/UserHookFlags.cs
+-i:C:/Users/Adin-PC/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.properties@0.2.11-preview/Editor/Serialization/ReferenceAssemblies.cs
 -v:0

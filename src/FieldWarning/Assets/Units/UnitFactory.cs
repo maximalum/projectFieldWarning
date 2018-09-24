@@ -21,23 +21,27 @@ namespace PFW.Ingame.Prototype
         {
             GameObject unit;
 
-            switch (type) {
-            case UnitType.Tank:
-                unit = Resources.Load<GameObject>("Tank");
-                //label.GetComponentInChildren<Text>().text = "M1A2 Abrams";
-                break;
-            case UnitType.AFV:
-                unit = Resources.Load<GameObject>("AFV");
-                break;
-            case UnitType.Infantry:
-                var obj = new GameObject();
-                var b = obj.AddComponent<InfantryBehaviour>();
-                b.enabled = false;
-                unit = obj;
-                break;
-            default:
-                unit = null;
-                break;
+            switch (type)
+            {
+                case UnitType.Tank:
+                    unit = Resources.Load<GameObject>("Tank");
+                    //label.GetComponentInChildren<Text>().text = "M1A2 Abrams";
+                    break;
+                case UnitType.AFV:
+                    unit = Resources.Load<GameObject>("AFV");
+                    break;
+                case UnitType.Infantry:
+                    var obj = new GameObject();
+                    var b = obj.AddComponent<InfantryBehaviour>();
+                    b.enabled = false;
+                    unit = obj;
+                    break;
+                case UnitType.Arty:
+                    unit = Resources.Load<GameObject>("Arty");            
+                    break;
+                default:
+                    unit = null;
+                    break;
             }
 
             //unit.GetComponent<UnitLabelAttacher>().Label = label;
@@ -85,6 +89,7 @@ namespace PFW.Ingame.Prototype
     {
         Tank,
         Infantry,
-        AFV
+        AFV,
+        Arty
     }
 }

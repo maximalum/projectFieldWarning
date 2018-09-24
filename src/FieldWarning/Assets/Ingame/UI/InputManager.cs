@@ -171,13 +171,18 @@ namespace PFW.Ingame.UI
         public void TankButtonCallback()
         {
             if (_currentBuyTransaction == null)
-                _currentBuyTransaction = new BuyTransaction(UnitType.Tank, _localPlayer);
+                _currentBuyTransaction = new BuyTransaction(UnitType.Arty, _localPlayer);//Change back to Unit.Type tank if you want tanks 
             else
                 _currentBuyTransaction.AddUnit();
 
             //buildUnit(UnitType.Tank);
             CurMouseMode = MouseMode.purchasing;
         }
+        public void ArtyButtonCallback()
+        {
+            BuildUnit(UnitType.Arty);
+            CurMouseMode = MouseMode.purchasing;
+        }  
 
         public void InfantryButtonCallback()
         {
