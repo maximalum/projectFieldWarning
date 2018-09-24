@@ -310,7 +310,6 @@
 -d:ENABLE_UNITY_COLLECTIONS_CHECKS
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
--d:ENABLE_VSTU
 -d:CROSS_PLATFORM_INPUT
 -i:"D:/unity/Field warning/projectFieldWarning/src/FieldWarning/Assets/Buildings/DestructibleStructure.cs"
 -i:"D:/unity/Field warning/projectFieldWarning/src/FieldWarning/Assets/bullets and tracers/Bullet.cs"

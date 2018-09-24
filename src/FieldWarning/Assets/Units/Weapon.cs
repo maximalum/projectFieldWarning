@@ -60,10 +60,7 @@ namespace PFW.Weapons
         {
             unit = gameObject.GetComponent<UnitBehaviour>();
             enabled = false;
-            ShotStarterPosition = barrel.transform;
-            ShotStarterPosition.position.Set(ShotStarterPosition.position.x,
-                ShotStarterPosition.position.y, ShotStarterPosition.position.z + 1); //move the shell start possitiona  bit infront of the gun 
-
+           
 
         }
 
@@ -149,6 +146,13 @@ namespace PFW.Weapons
                 turretAngle = targetTurretAngle;
             }
 
+            #region ArtyAdditionalCode
+            if (unit.Platoon.Type == Ingame.Prototype.UnitType.Arty)
+            {
+                targetBarrelAngle = -data.ArcUp;
+            }
+            #endregion
+
             deltaAngle = (targetBarrelAngle - barrelAngle).unwrapDegree();
             if (Mathf.Abs(deltaAngle) > turn)
             {
@@ -162,17 +166,6 @@ namespace PFW.Weapons
 
             turret.localEulerAngles = new Vector3(0, turretAngle, 0);
             barrel.localEulerAngles = new Vector3(barrelAngle, 0, 0);
-
-
-
-            #region ArtyAdditionalCode
-
-            if (unit.Platoon.Type == Ingame.Prototype.UnitType.Arty)
-            {
-                barrel.localEulerAngles = new Vector3(-data.ArcUp, 0, 0);
-            }
-
-            #endregion
 
             return aimed;
         }
@@ -219,8 +212,11 @@ namespace PFW.Weapons
 
 
                 GameObject shell = Resources.Load<GameObject>("shell");
-                shell.GetComponent<BulletBehavior>().SetUp(ShotStarterPosition, target.position, 60);
-                Instantiate(shell, ShotStarterPosition.position, ShotStarterPosition.transform.rotation);
+                GameObject shell_new =Instantiate(shell, ShotStarterPosition.position, ShotStarterPosition.transform.rotation);
+                shell_new.GetComponent<BulletBehavior>().SetUp(ShotStarterPosition, target.position, 60);
+
+                //Debug.Break();
+               
 
                 return true;
                 
