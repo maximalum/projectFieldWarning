@@ -14,11 +14,12 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Entities;
+
+using PFW.Ingame.Prototype;
 using PFW.Ingame.UI;
 
 using static PFW.Ingame.UI.InputManager;
-using Unity.Entities;
-using PFW.Ingame.Prototype;
 
 namespace PFW.Model.Game
 {
