@@ -14,6 +14,8 @@ using UnityEngine;
 
 using PFW.Model.Game;
 using PFW.ECS;
+using Unity.Transforms;
+using Unity.Entities;
 
 namespace PFW.Ingame.Prototype
 {
@@ -92,9 +94,15 @@ namespace PFW.Ingame.Prototype
             VisibleBehavior vis = new VisibleBehavior(unit, unitBehaviour);
             unitBehaviour.VisibleBehavior = vis;
 
+            // GameObjectEntity may simplify the creation of components, but it has some restrictions (only one component type per object, e.g. no multiple weapons..
+            //var e = unitBehaviour.gameObject.GetComponent<GameObjectEntity>();
+            //_session.EntityManager.AddComponentData(e.Entity, new Vision());
+            
             unitBehaviour.Entity = _session.EntityManager.CreateEntity();
             _session.EntityManager
                 .AddComponentData(unitBehaviour.Entity, new Vision());
+            _session.EntityManager
+                .AddComponentData(unitBehaviour.Entity, new Position());
         }
     }
 

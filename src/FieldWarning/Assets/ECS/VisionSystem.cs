@@ -15,6 +15,7 @@ using System;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Jobs;
+using Unity.Transforms;
 using UnityEngine;
 
 namespace PFW.ECS
@@ -24,7 +25,6 @@ namespace PFW.ECS
         public float max_spot_range;
     }
 
-    // TODO write as JobComponentSystem:
     public class VisionSystem : JobComponentSystem
     {
         [ReadOnly]
@@ -33,17 +33,18 @@ namespace PFW.ECS
         // The system decides here whether a job shall be executed or not. Note that if scheduled, the job's execute method will not be called once but rather as many times as there are components.
         protected override JobHandle OnUpdate(JobHandle inputDeps)
         {
-            //Debug.Log("yo");
-
-            Job job = new Job();
+            VisibilityJob job = new VisibilityJob();
             return job.Schedule(this, inputDeps);
         }
 
-        private struct Job : IJobProcessComponentData<Vision>
+        private struct VisibilityJob : 
+            IJobProcessComponentData<Vision, Position>
         {
-            public void Execute(ref Vision vid)
+            public void Execute(
+                ref Vision vid, 
+                [ReadOnly] ref Position pos)
             {
-                //Debug.Log("hi");
+                Debug.Log(pos.Value);
                 return;
             }
         }

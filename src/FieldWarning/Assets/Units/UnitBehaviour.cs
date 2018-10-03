@@ -94,6 +94,14 @@ public abstract class UnitBehaviour : SelectableBehavior, Matchable<Vector3>
         UpdateCurrentPosition();
     }
 
+    // This is temporary logic that we need in order to make transform.position accessible from ECS:
+    public void LateUpdate()
+    {
+        Unity.Transforms.Position p = Platoon.Owner.Session.EntityManager.GetComponentData<Unity.Transforms.Position>(Entity);
+        p.Value = transform.position;
+        Platoon.Owner.Session.EntityManager.SetComponentData(Entity, p);
+    }
+
     private void UpdateCurrentPosition()
     {
         Vector3 diff = (_position - transform.position) * Time.deltaTime;
