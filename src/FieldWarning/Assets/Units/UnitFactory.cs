@@ -99,8 +99,11 @@ namespace PFW.Ingame.Prototype
             //_session.EntityManager.AddComponentData(e.Entity, new Vision());
             
             unitBehaviour.Entity = _session.EntityManager.CreateEntity();
+            VisionComponent v = new VisionComponent();
+            v.max_spot_range = 800;
+
             _session.EntityManager
-                .AddComponentData(unitBehaviour.Entity, new Vision());
+                .AddComponentData(unitBehaviour.Entity, v);
             _session.EntityManager
                 .AddComponentData(unitBehaviour.Entity, new Position());
         }
